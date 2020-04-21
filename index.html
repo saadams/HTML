@@ -94,11 +94,11 @@
       function getTotal(){
             var totalAmt = document.getElementById('totalAmt').value
             var tip = document.getElementById('tipInput').value
-            var tipAmt = (totalAmt*tip/100).toFixed()*100;
+            var tipAmt = totalAmt*tip/100;
             if(totalAmt != ''){
-            endTip = "You tipped " + "$" + tipAmt;
+            endTip = "You tipped " + "$" + tipAmt.toFixed(2);
             endTipHt.innerHTML = endTip;
-            var totalWTip = parseFloat(parseInt(tipAmt) + parseInt(totalAmt));
+            var totalWTip = parseFloat(parseFloat(tipAmt)+ parseFloat(totalAmt)).toFixed(2);
             endTotal = "Your total " +"$" + totalWTip;
             endTotalHt.innerHTML = endTotal
             }else{alert('Enter a Number')}
