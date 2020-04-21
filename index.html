@@ -98,7 +98,7 @@
             if(totalAmt != ''){
             endTip = "You tipped " + "$" + tipAmt;
             endTipHt.innerHTML = endTip;
-            var totalWTip = parseFloat(parseInt(tipAmt) + parseInt(totalAmt));
+            var totalWTip = parseFloat(parseInt(tipAmt) + parseInt(totalAmt)).toFixed()*20;
             endTotal = "Your total " +"$" + totalWTip;
             endTotalHt.innerHTML = endTotal
             }else{alert('Enter a Number')}
