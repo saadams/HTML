@@ -1,4 +1,4 @@
 # saadams.github.io
 
 
-Basic tip calculator nothing special.
+Very basic pages that im messing around with.
